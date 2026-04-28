@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Sports | Push Your Limits</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include FontAwesome for icons (optional, using raw SVG/unicode instead to keep no libraries rule) -->
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">AURA</a>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Cart Icon (SVG or Text) -->
+            <div class="cart-icon-container" id="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+            <a href="shop.html" class="btn btn-accent" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Shop Now</a>
+        </div>
+    </nav>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn btn-accent checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Engineered For Greatness</h1>
+            <p>Experience the next level of performance and comfort with our latest collection.</p>
+            <a href="shop.html" class="btn btn-accent">Explore Collection</a>
+        </div>
+    </header>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="section">
+        <h2>Trending Now</h2>
+        <div class="product-grid" id="featured-products-grid">
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- BRAND VALUES -->
+    <section class="brand-values">
+        <h2>Why Aura?</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <h3>Innovation</h3>
+                <p>Advanced materials designed to map your body's movements and temperature.</p>
+            </div>
+            <div class="value-item">
+                <h3>Performance</h3>
+                <p>Tested by elite athletes to ensure you break records, not your gear.</p>
+            </div>
+            <div class="value-item">
+                <h3>Sustainability</h3>
+                <p>Committed to zero waste and lowering our carbon footprint by 2030.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMO BANNER -->
+    <section class="promo-banner">
+        <h2>Limited Time Offer</h2>
+        <p style="margin-bottom: 2rem; font-size: 1.2rem;">Get 20% off all Running Footwear. Use code: PACE20</p>
+        <a href="shop.html" class="btn">Shop The Sale</a>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials">
+        <h2>Athlete Approved</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="quote">"The Aura Pro X1 changed how I train. The energy return is unlike anything I've worn before."</p>
+                <p class="customer-name">- Sarah J., Marathon Runner</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Incredible lockdown and court feel. Best basketball shoe of the year."</p>
+                <p class="customer-name">- Marcus T., Pro Athlete</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Perfect balance of style and function. I wear them to the gym and on the street."</p>
+                <p class="customer-name">- David L., Fitness Coach</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="shop.html">Footwear</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Stay Updated</h4>
+                <p style="margin-bottom: 1rem; color: #ccc;">Join our mailing list for exclusive drops.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura Sports. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
